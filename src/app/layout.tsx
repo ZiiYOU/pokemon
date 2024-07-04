@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="./icon.png" sizes="any" />
-      <body className="relative w-full h-screen grid justify-items-center bg-[url('../../public/bg.jpg')] bg-cover bg-center">
+      <body className="relative w-full h-screen pt-20 grid justify-items-center bg-[url('../../public/bg.jpg')] bg-cover bg-center bg-no-repeat">
         {children}
-        <footer className="absolute fixed w-full h-56 px-12 bottom-0 flex items-center justify-between basis-0 ">
+        <footer className="absolute fixed w-full h-56 px-12 py-4 bottom-0 flex items-center justify-between basis-0 ">
           <img src="/ggo.png" alt="" className="w-24 h-32" />
           <img src="/logo.webp" alt="" className="w-2/12 " />
           <img src="/jiwooo.png" alt="" className="w-32" />
