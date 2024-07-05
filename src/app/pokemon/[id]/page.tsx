@@ -6,7 +6,6 @@ const DetailPage = async ({ params }: { params: { id: string } }) => {
   const getAPokemon = async (id: string) => {
     const res = await fetch(`http://localhost:3000/api/pokemons/${id}`);
     const data = res.json();
-
     return data;
   };
   const pokemon = await getAPokemon(params.id);

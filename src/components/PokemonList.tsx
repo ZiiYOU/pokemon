@@ -12,7 +12,6 @@ const PokemonList = () => {
       try {
         const res = await fetch("/api/pokemons");
         const pokemons = await res.json();
-        console.log(pokemons);
         setPokemon(pokemons);
       } catch (error) {
         console.log("Error =>", error);
